@@ -11,7 +11,7 @@ export default function Transaction({ transaction }) {
     <li className={sign === "-" ? "minus" : "plus"}>
       {transaction.text}{" "}
       <span>
-        {sign} Rs.{Math.abs(transaction.amount)}
+        {sign} $ {Math.abs(transaction.amount)}
       </span>
       <button
         onClick={() => deleteTransaction(transaction.id)}
